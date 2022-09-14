@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>SuperHumanos.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">nuevo</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">SuperHumanos.java</span></div><h1>SuperHumanos.java</h1><pre class="source lang-java linenums">public class SuperHumanos extends Personajes{
+    private boolean volar;
+    private boolean superSalto;
+    private int superIncremento;
+
+    public SuperHumanos(String nombre, float salud,String sexo,Characterization[] characterization, float ultraje, float velocidad, int escudo,boolean volar, boolean superSalto, int superIncremento,Personajes[] personajes,String[] liga) {
+<span class="fc" id="L7">        super(nombre, salud, ultraje, velocidad, escudo,sexo,characterization,personajes,liga);</span>
+<span class="fc" id="L8">        this.volar = volar;</span>
+<span class="fc" id="L9">        this.superSalto = superSalto;</span>
+<span class="fc" id="L10">        this.superIncremento = superIncremento;</span>
+<span class="fc" id="L11">    }</span>
+
+    @Override
+    public String toString() {
+<span class="nc" id="L15">        return &quot;SuperHumanos{&quot; +</span>
+                &quot;volar=&quot; + volar +
+                &quot;, superSalto=&quot; + superSalto +
+                &quot;, superIncremento=&quot; + superIncremento +
+                '}';
+    }
+
+    public boolean isVolar() {
+<span class="nc" id="L23">        return volar;</span>
+    }
+
+    public void setVolar(boolean volar) {
+<span class="nc" id="L27">        this.volar = volar;</span>
+<span class="nc" id="L28">    }</span>
+
+    public boolean isSuperSalto() {
+<span class="nc" id="L31">        return superSalto;</span>
+    }
+
+    public void setSuperSalto(boolean superSalto) {
+<span class="nc" id="L35">        this.superSalto = superSalto;</span>
+<span class="nc" id="L36">    }</span>
+
+    public int getSuperIncremento() {
+<span class="nc" id="L39">        return superIncremento;</span>
+    }
+
+    public void setSuperIncremento(int superIncremento) {
+<span class="nc" id="L43">        this.superIncremento = superIncremento;</span>
+<span class="nc" id="L44">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>
