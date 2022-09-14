@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TestC {
     /**
-     * Add test.
+     * Add test
      */
     @Test
     public void addCharacterization() {
