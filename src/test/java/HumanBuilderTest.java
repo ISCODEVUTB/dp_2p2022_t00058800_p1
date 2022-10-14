@@ -10,41 +10,41 @@ public class HumanBuilderTest {
     public void buildName() {
         characterDirector.setCharacterBuilder(characterBuilder = documentExpect);
         characterDirector.buildCharacter();
-        assertEquals(characterDirector.getCharacter().getName(),"Ivan");
+        assertEquals("Ivan",characterDirector.getCharacter().getName());
     }
 
     @Test
     public void buildGender() {
         characterDirector.setCharacterBuilder(characterBuilder = documentExpect);
         characterDirector.buildCharacter();
-        assertEquals(characterDirector.getCharacter().getGender(),"Masculine");
+        assertEquals("Masculine",characterDirector.getCharacter().getGender());
     }
 
     @Test
     public void buildHealth() {
         characterDirector.setCharacterBuilder(characterBuilder = documentExpect);
         characterDirector.buildCharacter();
-        assertEquals(characterDirector.getCharacter().getHealth(),100);
+        assertEquals(100,characterDirector.getCharacter().getHealth());
     }
 
     @Test
     public void buildDamage() {
         characterDirector.setCharacterBuilder(characterBuilder = documentExpect);
         characterDirector.buildCharacter();
-        assertEquals(characterDirector.getCharacter().getDamage(),10);
+        assertEquals(10,characterDirector.getCharacter().getDamage());
     }
 
     @Test
     public void buildShield() {
         characterDirector.setCharacterBuilder(characterBuilder = documentExpect);
         characterDirector.buildCharacter();
-        assertEquals(characterDirector.getCharacter().getShield(),5);
+        assertEquals(5,characterDirector.getCharacter().getShield());
     }
 
     @Test
     public void buildSpeed() {
         characterDirector.setCharacterBuilder(characterBuilder = documentExpect);
         characterDirector.buildCharacter();
-        assertEquals(characterDirector.getCharacter().getSpeed(),20);
+        assertEquals(20,characterDirector.getCharacter().getSpeed());
     }
 }

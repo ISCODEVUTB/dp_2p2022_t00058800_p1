@@ -1,4 +1,3 @@
-import java.util.List;
 
 public class AliensBuilder extends CharacterBuilder {
     @Override

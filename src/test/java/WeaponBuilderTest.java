@@ -11,35 +11,35 @@ public class WeaponBuilderTest {
     public void buildName() {
         characterizationDirector.setCharacterizationBuilder(characterizationBuilder = documentExpect);
         characterizationDirector.buildCharacterization();
-        assertEquals(characterizationDirector.getCharacterization().getCharacterizationName(),"Blade");
+        assertEquals("Blade",characterizationDirector.getCharacterization().getCharacterizationName());
     }
 
     @Test
     public void buildHistory() {
         characterizationDirector.setCharacterizationBuilder(characterizationBuilder = documentExpect);
         characterizationDirector.buildCharacterization();
-        assertEquals(characterizationDirector.getCharacterization().getCharacterizationHistory(),"Created by evil goblins in the foundations of volcanoes");
+        assertEquals("Created by evil goblins in the foundations of volcanoes",characterizationDirector.getCharacterization().getCharacterizationHistory());
     }
 
     @Test
     public void buildDescription() {
         characterizationDirector.setCharacterizationBuilder(characterizationBuilder = documentExpect);
         characterizationDirector.buildCharacterization();
-        assertEquals(characterizationDirector.getCharacterization().getCharacterizationDescription(),"This blade brings glory to the wielder, increasing their speed and jump.");
+        assertEquals("This blade brings glory to the wielder, increasing their speed and jump.",characterizationDirector.getCharacterization().getCharacterizationDescription());
     }
 
     @Test
     public void buildDamage() {
         characterizationDirector.setCharacterizationBuilder(characterizationBuilder = documentExpect);
         characterizationDirector.buildCharacterization();
-        assertEquals(characterizationDirector.getCharacterization().getCharacterizationDamage(),50);
+        assertEquals(50,characterizationDirector.getCharacterization().getCharacterizationDamage());
     }
 
     @Test
     public void buildShield() {
         characterizationDirector.setCharacterizationBuilder(characterizationBuilder = documentExpect);
         characterizationDirector.buildCharacterization();
-        assertEquals(characterizationDirector.getCharacterization().getCharacterizationShield(),10);
+        assertEquals(10,characterizationDirector.getCharacterization().getCharacterizationShield());
     }
 
     @Test
@@ -53,7 +53,7 @@ public class WeaponBuilderTest {
                 ", characterizationDamage=" + characterizationDirector.getCharacterization().getCharacterizationDamage() +
                 ", characterizationShield=" + characterizationDirector.getCharacterization().getCharacterizationShield() +
                 '}';
-        assertEquals(characterizationDirector.getCharacterization().toString(),expect);
+        assertEquals(expect,characterizationDirector.getCharacterization().toString());
     }
 
 }

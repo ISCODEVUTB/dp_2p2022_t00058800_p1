@@ -12,42 +12,42 @@ public class AlienBuilderTest {
     public void buildName() {
         characterDirector.setCharacterBuilder(characterBuilder = documentExpect);
         characterDirector.buildCharacter();
-        assertEquals(characterDirector.getCharacter().getName(),"Xolos");
+        assertEquals("Xolos",characterDirector.getCharacter().getName());
     }
 
     @Test
     public void buildGender() {
         characterDirector.setCharacterBuilder(characterBuilder = documentExpect);
         characterDirector.buildCharacter();
-        assertEquals(characterDirector.getCharacter().getGender(),"Unknown");
+        assertEquals("Unknown",characterDirector.getCharacter().getGender());
     }
 
     @Test
     public void buildHealth() {
         characterDirector.setCharacterBuilder(characterBuilder = documentExpect);
         characterDirector.buildCharacter();
-        assertEquals(characterDirector.getCharacter().getHealth(),200);
+        assertEquals(200,characterDirector.getCharacter().getHealth());
     }
 
     @Test
     public void buildDamage() {
         characterDirector.setCharacterBuilder(characterBuilder = documentExpect);
         characterDirector.buildCharacter();
-        assertEquals(characterDirector.getCharacter().getDamage(),120);
+        assertEquals(120,characterDirector.getCharacter().getDamage());
     }
 
     @Test
     public void buildShield() {
         characterDirector.setCharacterBuilder(characterBuilder = documentExpect);
         characterDirector.buildCharacter();
-        assertEquals(characterDirector.getCharacter().getShield(),40);
+        assertEquals(40,characterDirector.getCharacter().getShield());
     }
 
     @Test
     public void buildSpeed() {
         characterDirector.setCharacterBuilder(characterBuilder = documentExpect);
         characterDirector.buildCharacter();
-        assertEquals(characterDirector.getCharacter().getSpeed(),100);
+        assertEquals(100,characterDirector.getCharacter().getSpeed());
     }
 
     @Test
@@ -56,6 +56,6 @@ public class AlienBuilderTest {
         characterDirector.buildCharacter();
         String league = "DC";
         characterDirector.getCharacter().addLeague(league);
-        assertEquals(characterDirector.getCharacter().getLeague(),league);
+        assertEquals(league,characterDirector.getCharacter().getLeague());
     }
 }

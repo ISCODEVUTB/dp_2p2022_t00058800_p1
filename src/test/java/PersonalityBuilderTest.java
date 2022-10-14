@@ -11,34 +11,34 @@ public class PersonalityBuilderTest {
     public void buildName() {
         characterizationDirector.setCharacterizationBuilder(characterizationBuilder = documentExpect);
         characterizationDirector.buildCharacterization();
-        assertEquals(characterizationDirector.getCharacterization().getCharacterizationName(),"Pride");
+        assertEquals("Pride",characterizationDirector.getCharacterization().getCharacterizationName());
     }
 
     @Test
     public void buildHistory() {
         characterizationDirector.setCharacterizationBuilder(characterizationBuilder = documentExpect);
         characterizationDirector.buildCharacterization();
-        assertEquals(characterizationDirector.getCharacterization().getCharacterizationHistory(),"Since he was very proud and arrogant, they told him that this would not bring him anything good");
+        assertEquals("Since he was very proud and arrogant, they told him that this would not bring him anything good",characterizationDirector.getCharacterization().getCharacterizationHistory());
     }
 
     @Test
     public void buildDescription() {
         characterizationDirector.setCharacterizationBuilder(characterizationBuilder = documentExpect);
         characterizationDirector.buildCharacterization();
-        assertEquals(characterizationDirector.getCharacterization().getCharacterizationDescription(),"In this case, his pride makes him stronger, it increases his shield by 20 units.");
+        assertEquals("In this case, his pride makes him stronger, it increases his shield by 20 units.",characterizationDirector.getCharacterization().getCharacterizationDescription());
     }
 
     @Test
     public void buildDamage() {
         characterizationDirector.setCharacterizationBuilder(characterizationBuilder = documentExpect);
         characterizationDirector.buildCharacterization();
-        assertEquals(characterizationDirector.getCharacterization().getCharacterizationDamage(),0);
+        assertEquals(0,characterizationDirector.getCharacterization().getCharacterizationDamage());
     }
 
     @Test
     public void buildShield() {
         characterizationDirector.setCharacterizationBuilder(characterizationBuilder = documentExpect);
         characterizationDirector.buildCharacterization();
-        assertEquals(characterizationDirector.getCharacterization().getCharacterizationShield(),20);
+        assertEquals(20,characterizationDirector.getCharacterization().getCharacterizationShield());
     }
 }

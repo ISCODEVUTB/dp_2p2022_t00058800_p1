@@ -11,42 +11,42 @@ public class ArtificialBuilderTest {
     public void buildName() {
         characterDirector.setCharacterBuilder(characterBuilder = documentExpect);
         characterDirector.buildCharacter();
-        assertEquals(characterDirector.getCharacter().getName(),"Cyborg");
+        assertEquals("Cyborg",characterDirector.getCharacter().getName());
     }
 
     @Test
     public void buildGender() {
         characterDirector.setCharacterBuilder(characterBuilder = documentExpect);
         characterDirector.buildCharacter();
-        assertEquals(characterDirector.getCharacter().getGender(),"Unknown");
+        assertEquals("Unknown",characterDirector.getCharacter().getGender());
     }
 
     @Test
     public void buildHealth() {
         characterDirector.setCharacterBuilder(characterBuilder = documentExpect);
         characterDirector.buildCharacter();
-        assertEquals(characterDirector.getCharacter().getHealth(),150);
+        assertEquals(150,characterDirector.getCharacter().getHealth());
     }
 
     @Test
     public void buildDamage() {
         characterDirector.setCharacterBuilder(characterBuilder = documentExpect);
         characterDirector.buildCharacter();
-        assertEquals(characterDirector.getCharacter().getDamage(),100);
+        assertEquals(100,characterDirector.getCharacter().getDamage());
     }
 
     @Test
     public void buildShield() {
         characterDirector.setCharacterBuilder(characterBuilder = documentExpect);
         characterDirector.buildCharacter();
-        assertEquals(characterDirector.getCharacter().getShield(),40);
+        assertEquals(40,characterDirector.getCharacter().getShield());
     }
 
     @Test
     public void buildSpeed() {
         characterDirector.setCharacterBuilder(characterBuilder = documentExpect);
         characterDirector.buildCharacter();
-        assertEquals(characterDirector.getCharacter().getSpeed(),90);
+        assertEquals(90,characterDirector.getCharacter().getSpeed());
     }
 
     @Test
@@ -64,6 +64,6 @@ public class ArtificialBuilderTest {
                 ", enemies=" + characterDirector.getCharacter().getEnemies() +
                 ", league='" + characterDirector.getCharacter().getLeague() + '\'' +
                 '}';
-        assertEquals(characterDirector.getCharacter().toString(),expect);
+        assertEquals(expect,characterDirector.getCharacter().toString());
     }
 }
