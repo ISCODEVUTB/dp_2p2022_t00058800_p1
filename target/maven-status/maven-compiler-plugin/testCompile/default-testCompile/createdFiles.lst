@@ -1,1 +1,9 @@
-TestC.class
+PersonalityBuilderTest.class
+SuperHumanBuilderTest.class
+WeaponBuilderTest.class
+ArtificialBuilderTest.class
+AbilityBuilderTest.class
+DebilityBuilderTest.class
+AlienBuilderTest.class
+PowerBuilderTest.class
+HumanBuilderTest.class

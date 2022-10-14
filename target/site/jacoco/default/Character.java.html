@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Character.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">nuevo</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">Character.java</span></div><h1>Character.java</h1><pre class="source lang-java linenums">import java.util.ArrayList;
+import java.util.List;
+
+<span class="fc" id="L4">public class Character implements IFicha{</span>
+    private String name;
+    private String gender;
+    private float health;
+    private float damage;
+    private float speed;
+    private int shield;
+<span class="fc" id="L11">    private List&lt;Characterization&gt; characterization = new ArrayList&lt;Characterization&gt;();</span>
+<span class="fc" id="L12">    private List&lt;Character&gt; enemies = new ArrayList&lt;Character&gt;();</span>
+<span class="fc" id="L13">    private String league = &quot;&quot;;</span>
+
+    @Override
+    public String toString() {
+<span class="fc" id="L17">        return &quot;Character{&quot; +</span>
+                &quot;name='&quot; + name + '\'' +
+                &quot;, gender='&quot; + gender + '\'' +
+                &quot;, health=&quot; + health +
+                &quot;, damage=&quot; + damage +
+                &quot;, speed=&quot; + speed +
+                &quot;, shield=&quot; + shield +
+                &quot;, characterization=&quot; + characterization +
+                &quot;, enemies=&quot; + enemies +
+                &quot;, league='&quot; + league + '\'' +
+                '}';
+    }
+
+    public List&lt;Characterization&gt; getCharacterization() {
+<span class="fc" id="L31">        return characterization;</span>
+    }
+
+    public List&lt;Character&gt; getEnemies() {
+<span class="fc" id="L35">        return enemies;</span>
+    }
+
+    public String getLeague() {
+<span class="fc" id="L39">        return league;</span>
+    }
+
+    public String getName() {
+<span class="fc" id="L43">        return name;</span>
+    }
+
+    public String getGender() {
+<span class="fc" id="L47">        return gender;</span>
+    }
+
+    public float getHealth() {
+<span class="fc" id="L51">        return health;</span>
+    }
+
+    public float getDamage() {
+<span class="fc" id="L55">        return damage;</span>
+    }
+
+    public float getSpeed() {
+<span class="fc" id="L59">        return speed;</span>
+    }
+
+    public int getShield() {
+<span class="fc" id="L63">        return shield;</span>
+    }
+
+    public Character name(String name){
+<span class="fc" id="L67">        this.name = name;</span>
+<span class="fc" id="L68">        return this;</span>
+    }
+
+    public Character gender(String gender){
+<span class="fc" id="L72">        this.gender = gender;</span>
+<span class="fc" id="L73">        return this;</span>
+    }
+
+    public Character health(float health){
+<span class="fc" id="L77">        this.health = health;</span>
+<span class="fc" id="L78">        return this;</span>
+    }
+
+    public Character damage(float damage){
+<span class="fc" id="L82">        this.damage = damage;</span>
+<span class="fc" id="L83">        return this;</span>
+    }
+
+    public Character speed(float speed){
+<span class="fc" id="L87">        this.speed = speed;</span>
+<span class="fc" id="L88">        return this;</span>
+    }
+
+    public Character shield(int shield){
+<span class="fc" id="L92">        this.shield = shield;</span>
+<span class="fc" id="L93">        return this;</span>
+    }
+    public void add(Characterization characterization) {
+<span class="fc" id="L96">        this.characterization.add(characterization);</span>
+<span class="fc" id="L97">    }</span>
+    @Override
+    public void addLeague(String league) {
+<span class="fc" id="L100">        this.league = league;</span>
+<span class="fc" id="L101">    }</span>
+
+    @Override
+    public void addEnemy(Character enemy) {
+<span class="nc" id="L105">        this.enemies.add(enemy);</span>
+<span class="nc" id="L106">    }</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

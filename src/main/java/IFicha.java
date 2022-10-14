@@ -1,7 +1,5 @@
 public interface IFicha {
-
-    void add(Characterization characterization, Personajes personaje);
-
-    void liga(String liga, Personajes personaje);
-     void enemigo(Personajes enemigo,Personajes personaje);
+    void add(Characterization characterization);
+    void addLeague(String league);
+    void addEnemy(Character enemy);
 }

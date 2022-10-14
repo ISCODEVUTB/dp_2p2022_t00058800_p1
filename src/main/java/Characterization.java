@@ -1,33 +1,76 @@
-public abstract class Characterization {
-    private String nombre;
-    private String historia;
-    //Constructor de la clase
-    public Characterization(String nombre, String historia) {
-        this.nombre = nombre;
-        this.historia = historia;
-    }
-    //toString
+import java.util.ArrayList;
+import java.util.List;
+
+public class Characterization {
+    private String characterizationName;
+    private String characterizationHistory;
+    private String characterizationDescription;
+    private float characterizationDamage;
+    private int characterizationShield;
+
+    private List<Characterization> characterization = new ArrayList<>();
+
     @Override
     public String toString() {
         return "Characterization{" +
-                "nombre='" + nombre + '\'' +
-                ", historia='" + historia + '\'' +
+                "characterizationName='" + characterizationName + '\'' +
+                ", characterizationHistory='" + characterizationHistory + '\'' +
+                ", characterizationDescription='" + characterizationDescription + '\'' +
+                ", characterizationDamage=" + characterizationDamage +
+                ", characterizationShield=" + characterizationShield +
                 '}';
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getCharacterizationName() {
+        return characterizationName;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public String getCharacterizationHistory() {
+        return characterizationHistory;
     }
 
-    public String getHistoria() {
-        return historia;
+    public String getCharacterizationDescription() {
+        return characterizationDescription;
     }
 
-    public void setHistoria(String historia) {
-        this.historia = historia;
+    public float getCharacterizationDamage() {
+        return characterizationDamage;
+    }
+
+    public int getCharacterizationShield() {
+        return characterizationShield;
+    }
+
+    public Characterization characterizationName(String name){
+        this.characterizationName = name;
+        return this;
+    }
+
+    public Characterization characterizationHistory(String history){
+        this.characterizationHistory = history;
+        return this;
+    }
+
+    public Characterization characterizationDescription(String description){
+        this.characterizationDescription = description;
+        return this;
+    }
+
+    public Characterization characterizationDamage(float damage){
+        this.characterizationDamage = damage;
+        return this;
+    }
+
+    public Characterization characterizationShield(int shield){
+        this.characterizationShield = shield;
+        return this;
+    }
+
+    public void add(Characterization characterization){
+        this.characterization.add(characterization);
+    }
+
+    public List<Characterization> getCharacterization() {
+        return characterization;
     }
 }
