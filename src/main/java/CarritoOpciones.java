@@ -2,7 +2,7 @@ import java.util.*;
 public class CarritoOpciones
 {
     protected List<OpcionVehiculo> opciones =
-            new ArrayList<OpcionVehiculo>();
+            new ArrayList<>();
 
     public Imemento agregaOpcion(OpcionVehiculo opcionVehiculo)
     {
@@ -16,6 +16,14 @@ public class CarritoOpciones
     public void anula(Imemento memento)
     {
         MementoImpl mementoImplInstance = new MementoImpl();
+        try
+        {
+            mementoImplInstance.equals((MementoImpl) memento);
+        }
+        catch (ClassCastException e)
+        {
+            return;
+        }
         opciones = mementoImplInstance.getEstado();
     }
 

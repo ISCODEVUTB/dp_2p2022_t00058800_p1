@@ -16,6 +16,20 @@ public class Client {
         carritoOpciones.visualiza();
         carritoOpciones.anula(memento);
         carritoOpciones.visualiza();
+
+        /*
+        Salida
+        Contenido del carrito de opciones
+        opcion: Asientos en cuero
+        opcion: Reclinables
+
+        Contenido del carrito de opciones
+        opcion: Asientos deportivos
+
+        Contenido del carrito de opciones
+        opcion: Asientos en cuero
+        opcion: Reclinables
+        */
     }
 }
 

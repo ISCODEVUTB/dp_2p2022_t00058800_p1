@@ -7,6 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class OpcionVehiculoTest {
     public List<OpcionVehiculo> pruebas = new ArrayList<OpcionVehiculo>();
+    String mensaje2 = "opcion: Asientos en cuero \n";
     @Test
     public void agregaOpcionIncompatible() {
         OpcionVehiculo opcionIcompatible = new OpcionVehiculo("Asientos en cuero");
@@ -16,10 +17,10 @@ public class OpcionVehiculoTest {
     }
     @Test
     public void vizualiza() {
-        String mensaje = "opcion: Asientos en cuero \n";
+        String mensaje1 = "opcion: Asientos en cuero \n";
         OpcionVehiculo opcion = new OpcionVehiculo("Asientos en cuero");
         opcion.visualiza();
-        assertEquals(mensaje,mensaje);
+        assertEquals(mensaje1,mensaje2);
 
     }
 
