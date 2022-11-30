@@ -18,6 +18,7 @@ public class CarritoOpcionesTest {
         CarritoOpciones carritoOpciones = new CarritoOpciones();
         OpcionVehiculo opcion1 = new OpcionVehiculo("Asientos en cuero");
         carritoOpciones.agregaOpcion(opcion1);
+        carritoOpciones.anula(memento);
         assertEquals(memento.getEstado(),pruebas);
     }
 
@@ -28,6 +29,7 @@ public class CarritoOpcionesTest {
         CarritoOpciones carritoOpciones = new CarritoOpciones();
         OpcionVehiculo opcion1 = new OpcionVehiculo("Asientos en cuero");
         carritoOpciones.agregaOpcion(opcion1);
+        carritoOpciones.visualiza();
         assertEquals(mensaje1,mensaje2);
     }
 }
