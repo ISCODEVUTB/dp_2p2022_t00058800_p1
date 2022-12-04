@@ -1,3 +1,3 @@
 # Presentado por: Iván Zapata - Patrón Memento
-![java](https://user-images.githubusercontent.com/86697208/204915923-6ad83f92-3ab4-476d-bd7e-b8662596722a.png)
+![Imagen1](https://user-images.githubusercontent.com/86697208/205514032-447628bb-fd1c-4dcd-b669-4c06798c3b0f.png)
 
